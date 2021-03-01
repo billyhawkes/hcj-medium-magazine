@@ -153,3 +153,30 @@ nav a {
 .article_date {
     color: rgb(148, 164, 180);
 }
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 8rem;
+    background-color: #22262a;
+    color: white;
+}
+footer * a {
+    color: white;
+    font-size: 18px;
+}
+footer p {
+    font-size: 13px;
+}
+footer .vertline {
+    width: 2px;
+    height: 20px;
+    background-color: white;
+}
+footer nav a {
+    margin: 0;
+}
