@@ -21,7 +21,7 @@
 
 /* Content */
 .page_content {
-    margin: 2rem;
+    padding: 2rem;
 }
 .page_content h2 {
     margin: 1rem 0rem;
@@ -31,4 +31,31 @@
 }
 .content_break {
     margin: 2rem 0rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    /* Top level info  */
+    .page_info,
+    .page_content {
+        padding: 0.8rem;
+    }
+    .page_info h1 {
+        font-size: 8vw;
+    }
+    .page_info div p {
+        font-size: 5vw;
+    }
+    /* Image */
+    .page_img {
+        margin: 1rem 0.7rem 0rem 0.7rem;
+        width: 92%;
+    }
+    /* Page Info */
+    .page_content h2 {
+        font-size: 5vw;
+    }
+    .page_content p {
+        font-size: 4vw;
+    }
 }
