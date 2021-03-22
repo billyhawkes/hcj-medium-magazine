@@ -1,0 +1,34 @@
+/* Top level info  */
+.page_info {
+    padding: 2rem;
+}
+.page_info h1 {
+    font-size: 2.2rem;
+}
+.page_info div {
+    display: flex;
+    margin-top: 1rem;
+}
+.page_info div p {
+    margin-right: 1rem;
+}
+
+/* Image */
+.page_img {
+    margin: 1rem 2rem;
+    width: 70%;
+}
+
+/* Content */
+.page_content {
+    margin: 2rem;
+}
+.page_content h2 {
+    margin: 1rem 0rem;
+}
+.page_content p {
+    line-height: 1.5rem;
+}
+.content_break {
+    margin: 2rem 0rem;
+}
