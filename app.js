@@ -18,3 +18,22 @@ for (let button of carouselButtons) {
         carouselImages.style.transform = `translateX(${carouselXpos}px)`;
     });
 }
+
+// Subscribe Form
+import users from "../data/users.js";
+const subsribe_form = document.querySelector(".subscribe_form");
+const user_name = document.querySelector("#name");
+const user_email = document.querySelector("#email");
+
+const handleSubscribe = (e) => {
+    e.preventDefault();
+    const new_user = {
+        name: user_name.value,
+        email: user_email.value,
+    };
+    users.push(new_user);
+    console.log(users);
+    subsribe_form.reset();
+};
+
+subsribe_form.addEventListener("submit", handleSubscribe);
