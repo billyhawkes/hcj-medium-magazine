@@ -68,7 +68,7 @@ nav a {
     color: white;
 }
 
-/* Index Page */
+/* Carousel */
 .carousel {
     display: flex;
     align-items: center;
@@ -82,12 +82,11 @@ nav a {
     align-items: center;
     transition: transform 0.25s ease-in-out;
 }
-.carouselimages img {
-    transition: transform 0.25s ease-in-out;
-    object-fit: cover;
-}
-.carouselimages img:hover {
-    transform: scale(1.2);
+.carouselimages h3 {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    font-size: 3rem;
 }
 .carouselbutton {
     position: absolute;
@@ -215,6 +214,7 @@ footer nav a {
 
 /* Responsive */
 @media screen and (max-width: 800px) {
+    /* Screen Container */
     .container {
         width: 100%;
     }
@@ -242,11 +242,10 @@ footer nav a {
 
     /* Home Page Content */
     .carousel {
-        width: 95%;
-        height: 15rem;
-        margin: 1rem auto;
+        display: none;
     }
-    .latest {
+    /* Latest Section */
+    .latest h2 {
         text-align: center;
     }
     .latest .articles {
