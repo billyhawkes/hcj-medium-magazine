@@ -16,6 +16,7 @@ a {
 
 .container {
     max-width: 1200px;
+    min-height: 100vh;
     margin: auto;
 }
 
@@ -80,13 +81,33 @@ nav a {
 .carouselimages {
     display: flex;
     align-items: center;
+    object-fit: cover;
     transition: transform 0.25s ease-in-out;
+}
+.carouselimages img {
+    object-fit: cover;
+    width: 1200px;
+    height: 80vh;
+}
+.carousel a {
+    position: relative;
+    width: 1200px;
+    height: 80vh;
 }
 .carouselimages h3 {
     position: absolute;
-    bottom: 3rem;
+    bottom: 5rem;
     left: 2rem;
     font-size: 3rem;
+}
+.carouselimages p {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    font-size: 1.5rem;
+}
+.carouselimages p:last-child {
+    bottom: 1.2rem;
 }
 .carouselbutton {
     position: absolute;
@@ -144,6 +165,18 @@ nav a {
 .latest_article.news {
     background-image: url("images/News.png");
 }
+.latest_article.finance {
+    background-image: url("images/Finance.jpg");
+}
+.latest_article.entertainment {
+    background-image: url("images/Entertainment.png");
+}
+.latest_article.nature {
+    background-image: url("images/Nature.jpg");
+}
+.latest_article.nature h3 {
+    color: rgb(148, 164, 180);
+}
 .latest_article * {
     margin-top: 0.2rem;
 }
@@ -185,7 +218,7 @@ footer nav a {
 }
 
 /* Subsribe Form  */
-.subscribe_form {
+#subscribe_form {
     display: flex;
     padding: 2rem;
     flex-direction: column;
@@ -195,16 +228,16 @@ footer nav a {
     color: white;
     border-radius: 1rem;
 }
-.subscribe_form * {
+#subscribe_form * {
     margin-top: 1rem;
 }
-.subscribe_form h2 {
+#subscribe_form h2 {
     margin: 0;
 }
-.subscribe_form input {
+#subscribe_form input {
     padding: 0.2rem;
 }
-.subscribe_form *[type="submit"] {
+#subscribe_form *[type="submit"] {
     width: 30%;
     border: none;
     border-radius: 0.4rem;

@@ -14,7 +14,7 @@ for (let button of carouselButtons) {
             imageNum--;
             carouselXpos += 1200;
         }
-        if (e.target.classList.contains("next") && imageNum < 4) {
+        if (e.target.classList.contains("next") && imageNum < 3) {
             imageNum++;
             carouselXpos -= 1200;
         }
